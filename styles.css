@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Vidaloka&display=swap');
+/* Google Fonts */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    width: 100%;
+    background: url("img/pattern.jpg");
+    background-size: cover;
+}
+
+.card-place{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.card-head{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Vidaloka',serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(65,62,62);
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px;
+    grid-template-areas: "image" "text";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.card-image{
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text{
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text p{
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.card-text h2{
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card:hover{
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+/*card 1*/
+.card-image.card1{
+    background: url("img/love.jpg");
+    background-size: cover;
+}
+/*card 2*/
+.card-image.card2{
+    background: url("img/friendship.jpg");
+    background-size: cover;
+}
+
+/*card 3*/
+.card-image.card3{
+    background: url("img/attitude.jpg");
+    background-size: cover;
+}
